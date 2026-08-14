@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0610">
+  <title>For Rimmu ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+<style>
+
+/* --- Birthday photo title overlay update --- */
+.memory-card, .photo-card, .memory, .gallery-item, figure {
+  position: relative;
+  overflow: hidden;
+}
+.memory-card img, .photo-card img, .memory img, .gallery-item img, figure img {
+  display: block;
+}
+.memory-card .caption, .photo-card .caption, .memory .caption,
+.gallery-item .caption, figure figcaption {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  margin: 0 !important;
+  padding: 48px 24px 22px !important;
+  color: #fff !important;
+  background: linear-gradient(to top, rgba(8,5,15,.82), rgba(8,5,15,.38), transparent) !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.75) !important;
+  z-index: 3;
+}
+.memory-card .caption h1, .memory-card .caption h2, .memory-card .caption h3,
+.photo-card .caption h1, .photo-card .caption h2, .photo-card .caption h3,
+.memory .caption h1, .memory .caption h2, .memory .caption h3,
+.gallery-item .caption h1, .gallery-item .caption h2, .gallery-item .caption h3,
+figure figcaption h1, figure figcaption h2, figure figcaption h3 {
+  margin: 0 !important;
+  font-family: "Cormorant Garamond", Georgia, serif !important;
+  font-weight: 600 !important;
+  font-style: italic !important;
+  letter-spacing: .02em !important;
+}
+.memory-card .caption .number, .photo-card .caption .number,
+.memory .caption .number, .gallery-item .caption .number {
+  opacity: .75;
+  font-family: Georgia, serif !important;
+  font-style: normal !important;
+  font-size: .78rem !important;
+  letter-spacing: .18em !important;
+  margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="opening" class="opening">
+    <div class="opening-noise"></div>
+    <div class="opening-stars"></div>
+    <div class="opening-card">
+      <div class="tiny">A little something, made just for you</div>
+      <div class="gift-orbit"><span>✦</span><b>🎁</b><i>✦</i></div>
+      <p class="hello">Hey, Rimmu</p>
+      <h1>There is a whole little world<br>waiting for you.</h1>
+      <p class="opening-copy">Take a breath. Turn the sound on. Then open your surprise.</p>
+      <button id="openBtn" class="primary-btn">Open Your Surprise <span>→</span></button>
+      <div class="opening-note">Made with ❤️ by Ujju</div>
+    </div>
+  </div>
+
+  <button id="musicBtn" class="music-btn hidden" aria-label="Toggle music">♫</button>
+
+  <div id="site" class="site hidden">
+    <header class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-particles"></div>
+      <div class="hero-content reveal">
+        <p class="kicker">TODAY IS A LITTLE MORE SPECIAL</p>
+        <h2>Happy Birthday</h2>
+        <h1>Rimmu<span>❤️</span></h1>
+        <p class="hero-sub">A collection of tiny memories, silly smiles and a very big wish for your happiness.</p>
+        <div class="byline">— Ujju</div>
+        <a class="scroll-cue" href="#memories">Scroll to begin <span>↓</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="memories" class="memories section-pad">
+        <div class="section-head reveal">
+          <p class="kicker">CHAPTER 01 · MEMORIES</p>
+          <h2>From a tiny princess<br>to the Rimmu we know.</h2>
+          <p>Some pictures don't need a caption. They just need a place to stay forever.</p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="memory-card tall reveal">
+            <button class="photo-open" data-src="assets/photo1.jpg" aria-label="Open photo">
+              <img src="assets/photo1.jpg" alt="Rimmu as a baby">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>01</small><strong>My Littile Princess</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo2.jpg" aria-label="Open photo">
+              <img src="assets/photo2.jpg" alt="Rimmu as a child">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>02</small><strong>My kuchu-puchu</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card wide reveal">
+            <button class="photo-open" data-src="assets/photo3.jpg" aria-label="Open photo">
+              <img src="assets/photo3.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>03</small><strong>That smile. That vibe.</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo4.jpg" aria-label="Open photo">
+              <img src="assets/photo4.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>04</small><strong>Pretty little moment</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card tall reveal">
+            <button class="photo-open" data-src="assets/photo5.jpg" aria-label="Open photo">
+              <img src="assets/photo5.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>05</small><strong>Just being you</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo6.jpg" aria-label="Open photo">
+              <img src="assets/photo6.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>06</small><strong>A little sparkle</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo7.jpg" aria-label="Open photo">
+              <img src="assets/photo7.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>07</small><strong>Cutie mode: ON</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card wide reveal">
+            <button class="photo-open" data-src="assets/photo8.jpg" aria-label="Open photo">
+              <img src="assets/photo8.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>08</small><strong>Sunshine in a frame</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo9.jpg" aria-label="Open photo">
+              <img src="assets/photo9.jpg" alt="Rimmu with family">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>09</small><strong>Good people, good memories</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card tall reveal">
+            <button class="photo-open" data-src="assets/photo10.jpg" aria-label="Open photo">
+              <img src="assets/photo10.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>10</small><strong>Beautifully you</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo11.jpg" aria-label="Open photo">
+              <img src="assets/photo11.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>11</small><strong>One more smile ❤️</strong></figcaption>
+          </figure>
+
+          <figure class="memory-card reveal">
+            <button class="photo-open" data-src="assets/photo12.jpg" aria-label="Open photo">
+              <img src="assets/photo12.jpg" alt="Rimmu">
+              <span class="photo-shine"></span>
+            </button>
+            <figcaption><small>12</small><strong>And the story continues...</strong></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="videos section-pad">
+        <div class="section-head reveal">
+          <p class="kicker">CHAPTER 02 · MOVING MEMORIES</p>
+          <h2>Pictures freeze a moment.<br>Videos bring it back.</h2>
+          <p>So here's a little collection of moments you can actually press play on.</p>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video1.mp4" type="video/mp4"></video>
+            <div><span>01</span><strong>A memory in motion</strong></div>
+          </article>
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video2.mp4" type="video/mp4"></video>
+            <div><span>02</span><strong>One of those moments</strong></div>
+          </article>
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video3.mp4" type="video/mp4"></video>
+            <div><span>03</span><strong>Keep this one forever</strong></div>
+          </article>
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video4.mp4" type="video/mp4"></video>
+            <div><span>04</span><strong>Smile, it's a memory</strong></div>
+          </article>
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video5.mp4" type="video/mp4"></video>
+            <div><span>05</span><strong>Another little chapter</strong></div>
+          </article>
+          <article class="video-card reveal">
+            <video controls playsinline preload="metadata"><source src="assets/video6.mp4" type="video/mp4"></video>
+            <div><span>06</span><strong>For the birthday girl</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="letter-section section-pad">
+        <div class="letter-wrap reveal">
+          <p class="kicker">CHAPTER 03 · FROM UJJU</p>
+          <div class="letter-paper">
+            <div class="letter-stamp">R</div>
+            <p class="letter-script">Dear Rimmu,</p>
+            <p>Today is your day, but honestly, the world deserves a small celebration just because you're in it.</p>
+            <p>From the little princess in those old pictures to the person you are today, you've collected so many versions of yourself — and every one of them is worth remembering.</p>
+            <p>I hope this birthday brings you the kind of happiness that stays after the candles are gone: peaceful mornings, loud laughs, people who genuinely care, and a thousand reasons to smile.</p>
+            <p>Keep being your weird, cute, beautiful self. And whenever you forget how special you are, come back to this little page.</p>
+            <p class="letter-sign">Always cheering for you,<br><b>Ujju ❤️</b></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="final section-pad">
+        <div class="final-glow"></div>
+        <div class="final-content reveal">
+          <p class="kicker">THE LAST PAGE</p>
+          <div class="final-star">✦</div>
+          <h2>Happy Birthday,<br><span>Rimmu.</span></h2>
+          <p>Some people make ordinary days feel special.<br>You're one of those people.</p>
+          <div class="heart">♥</div>
+          <small>Made with love by Ujju</small>
+        </div>
+        <div id="confetti"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImg" src="" alt="Expanded memory">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
